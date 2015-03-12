@@ -105,12 +105,7 @@ property emacs_linum to decide whether to show line numbers on the left
     (scala-mode scala-indent:step)
     (sgml-mode sgml-basic-offset)
     (sh-mode sh-basic-offset sh-indentation)
-    (web-mode (web-mode-indent-style . (lambda (size) 2))
-              web-mode-markup-indent-offset
-              web-mode-css-indent-offset
-              web-mode-code-indent-offset
-              web-mode-script-padding
-              web-mode-style-padding)
+    (web-mode standard-indent)
     (yaml-mode yaml-indent-offset))
   "Alist of indentation setting methods by modes.
 
